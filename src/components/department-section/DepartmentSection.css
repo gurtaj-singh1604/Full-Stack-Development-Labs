@@ -1,0 +1,16 @@
+.department-section {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.department-section h2 {
+  color: #444;
+  margin-top: 0;
+}
+
+.department-section ul {
+  margin-bottom: 0;
+}

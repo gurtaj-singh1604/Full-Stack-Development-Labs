@@ -1,0 +1,21 @@
+.site-header {
+  display: flex;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  width: 80px;
+  margin-right: 1em;
+}
+
+.site-header h1 {
+  color: #444;
+  margin: 0;
+}
+
+.site-header p {
+  margin: 0.25em 0 0;
+}
