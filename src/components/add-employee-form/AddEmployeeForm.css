@@ -1,0 +1,36 @@
+.add-employee-form {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-employee-form h2 {
+  color: #444;
+  margin-top: 0;
+}
+
+.add-employee-form form div {
+  margin-bottom: 15px;
+}
+
+.add-employee-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.add-employee-form input,
+.add-employee-form select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.add-employee-form button {
+  padding: 8px 15px;
+}
+
+.validation-message {
+  margin: 5px 0 0;
+}
