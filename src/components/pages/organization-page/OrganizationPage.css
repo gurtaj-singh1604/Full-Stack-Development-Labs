@@ -1,0 +1,31 @@
+.organization-page {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+.organization-section {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.organization-section h2 {
+  color: #444;
+  margin-top: 0;
+}
+
+.organization-section ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.organization-section li {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}

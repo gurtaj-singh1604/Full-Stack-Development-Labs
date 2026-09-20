@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Header } from "./components/header/Header";
-import { Footer } from "./components/footer/Footer";
-import { DepartmentSection } from "./components/department-section/DepartmentSection";
-import { AddEmployeeForm } from "./components/add-employee-form/AddEmployeeForm";
+import { Routes, Route } from "react-router-dom";
+import { Layout } from "./components/layout/Layout";
+import { EmployeesPage } from "./components/pages/employees-page/EmployeesPage";
+import { OrganizationPage } from "./components/pages/organization-page/OrganizationPage";
 import departmentsData from "./data/departments.json";
 import type { Department } from "./interfaces/Department";
 import type { Employee } from "./interfaces/Employee";
@@ -30,25 +30,34 @@ function App() {
   }
 
   return (
-    <>
-      <Header />
-
-      <main className="employee-directory">
-        {departments.map((department) => (
-          <DepartmentSection
-            key={department.name}
-            department={department}
-          />
-        ))}
-
-        <AddEmployeeForm
-          departments={departments}
-          addEmployee={addEmployee}
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route
+          index
+          element={
+            <EmployeesPage
+              departments={departments}
+              addEmployee={addEmployee}
+            />
+          }
         />
-      </main>
 
-      <Footer />
-    </>
+        <Route
+          path="employees"
+          element={
+            <EmployeesPage
+              departments={departments}
+              addEmployee={addEmployee}
+            />
+          }
+        />
+
+        <Route
+          path="organization"
+          element={<OrganizationPage />}
+        />
+      </Route>
+    </Routes>
   );
 }
 

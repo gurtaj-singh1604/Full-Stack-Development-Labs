@@ -1,0 +1,16 @@
+.site-nav {
+  display: flex;
+  gap: 20px;
+  padding: 10px 2em;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
